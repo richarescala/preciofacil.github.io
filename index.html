@@ -12,12 +12,29 @@
     h1 {
       color: #2c3e50;
     }
-    h2 {
-      color: #34495e;
+    button.continent-button {
+      display: block;
+      width: 100%;
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      text-align: left;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .country-list {
+      display: none;
+      margin-left: 1rem;
+      background-color: #ecf0f1;
+      padding: 10px;
+      border-radius: 5px;
     }
     ul {
       list-style-type: none;
-      padding-left: 1rem;
+      padding-left: 0;
     }
     li {
       margin-bottom: 1rem;
@@ -29,9 +46,6 @@
     a:hover {
       text-decoration: underline;
     }
-    .continent {
-      margin-top: 2rem;
-    }
   </style>
 </head>
 <body>
@@ -39,22 +53,23 @@
   <h1>Consulta de Medicamentos</h1>
   <p>Acceso a bases de datos oficiales de registros y precios de medicamentos.</p>
 
-  <div class="continent">
-    <h2>América</h2>
+  <!-- América -->
+  <button class="continent-button" onclick="toggleVisibility('america')">América</button>
+  <div id="america" class="country-list">
     <ul>
-      <li><strong>Argentina</strong>
+      <li><strong>🇦🇷 Argentina</strong>
         <ul>
           <li><a href="https://ar.kairosweb.com/" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://ar.kairosweb.com/" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>Brasil</strong>
+      <li><strong>🇧🇷 Brasil</strong>
         <ul>
           <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>Chile</strong>
+      <li><strong>🇨🇱 Chile</strong>
         <ul>
           <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Precios de Medicamentos</a></li>
@@ -63,22 +78,23 @@
     </ul>
   </div>
 
-  <div class="continent">
-    <h2>Europa</h2>
+  <!-- Europa -->
+  <button class="continent-button" onclick="toggleVisibility('europa')">Europa</button>
+  <div id="europa" class="country-list">
     <ul>
-      <li><strong>Alemania</strong>
+      <li><strong>🇩🇪 Alemania</strong>
         <ul>
           <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>España</strong>
+      <li><strong>🇪🇸 España</strong>
         <ul>
           <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>Francia</strong>
+      <li><strong>🇫🇷 Francia</strong>
         <ul>
           <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Precios de Medicamentos</a></li>
@@ -86,6 +102,17 @@
       </li>
     </ul>
   </div>
+
+  <script>
+    function toggleVisibility(id) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'block') {
+        section.style.display = 'none';
+      } else {
+        section.style.display = 'block';
+      }
+    }
+  </script>
 
 </body>
 </html>

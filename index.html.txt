@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta de Medicamentos</title>
+</head>
+<body>
+  <h1>Bienvenido a Precio Fácil</h1>
+  <p>Accede a las bases de datos de registros y precios de medicamentos oficiales por país y continente.</p>
+</body>
+</html>

@@ -5,17 +5,29 @@
   <title>Consulta de Medicamentos - Precio Fácil</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 2rem;
-      background-color: #f9f9f9;
+      background-color: #f4f6f8;
+      color: #2c3e50;
     }
     h1 {
-      color: #2c3e50;
+      color: #1d8348;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #117a37;
+    }
+    .intro {
+      margin-bottom: 2rem;
+      background: #e8f5e9;
+      padding: 1rem;
+      border-left: 5px solid #1d8348;
+      border-radius: 5px;
     }
     button.continent-button {
       display: block;
       width: 100%;
-      background-color: #3498db;
+      background-color: #1d8348;
       color: white;
       padding: 10px;
       margin-top: 10px;
@@ -26,11 +38,11 @@
       border-radius: 5px;
     }
     .country-list {
-      display: none;
       margin-left: 1rem;
-      background-color: #ecf0f1;
+      background-color: #ffffff;
       padding: 10px;
       border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     ul {
       list-style-type: none;
@@ -40,61 +52,83 @@
       margin-bottom: 1rem;
     }
     a {
-      color: #2980b9;
+      color: #117a37;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
+    }
+    img.flag {
+      width: 24px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 8px;
     }
   </style>
 </head>
 <body>
 
   <h1>Consulta de Medicamentos</h1>
-  <p>Acceso a bases de datos oficiales de registros y precios de medicamentos.</p>
+
+  <div class="intro">
+    Herramienta de apoyo para realizar consultas de precios referenciales de medicamentos en bases de datos oficiales, conforme a la <strong>Resolución DINAVISA N° 174</strong>.
+  </div>
 
   <!-- América -->
-  <button class="continent-button" onclick="toggleVisibility('america')">América</button>
-  <div id="america" class="country-list">
+  <h2>América</h2>
+  <div class="country-list">
     <ul>
-      <li><strong>🇦🇷 Argentina</strong>
+      <li>
+        <img src="https://flagcdn.com/w40/ar.png" alt="Argentina" class="flag"><strong>Argentina</strong>
         <ul>
           <li><a href="https://ar.kairosweb.com/" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://ar.kairosweb.com/" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>🇧🇷 Brasil</strong>
+      <li>
+        <img src="https://flagcdn.com/w40/br.png" alt="Brasil" class="flag"><strong>Brasil</strong>
         <ul>
           <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>🇨🇱 Chile</strong>
+      <li>
+        <img src="https://flagcdn.com/w40/cl.png" alt="Chile" class="flag"><strong>Chile</strong>
         <ul>
           <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li>
+        <img src="https://flagcdn.com/w40/co.png" alt="Colombia" class="flag"><strong>Colombia</strong>
+        <ul>
+          <li><a href="https://www.minsalud.gov.co/salud/MT/Paginas/medicamentos-regulacion-precios.aspx" target="_blank">Registro de Medicamentos</a></li>
+          <li><a href="https://www.minsalud.gov.co/salud/MT/Paginas/medicamentos-regulacion-precios.aspx" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
     </ul>
   </div>
 
   <!-- Europa -->
-  <button class="continent-button" onclick="toggleVisibility('europa')">Europa</button>
-  <div id="europa" class="country-list">
+  <h2>Europa</h2>
+  <div class="country-list">
     <ul>
-      <li><strong>🇩🇪 Alemania</strong>
+      <li>
+        <img src="https://flagcdn.com/w40/de.png" alt="Alemania" class="flag"><strong>Alemania</strong>
         <ul>
           <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>🇪🇸 España</strong>
+      <li>
+        <img src="https://flagcdn.com/w40/es.png" alt="España" class="flag"><strong>España</strong>
         <ul>
           <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Precios de Medicamentos</a></li>
         </ul>
       </li>
-      <li><strong>🇫🇷 Francia</strong>
+      <li>
+        <img src="https://flagcdn.com/w40/fr.png" alt="Francia" class="flag"><strong>Francia</strong>
         <ul>
           <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Registro de Medicamentos</a></li>
           <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Precios de Medicamentos</a></li>
@@ -102,17 +136,6 @@
       </li>
     </ul>
   </div>
-
-  <script>
-    function toggleVisibility(id) {
-      const section = document.getElementById(id);
-      if (section.style.display === 'block') {
-        section.style.display = 'none';
-      } else {
-        section.style.display = 'block';
-      }
-    }
-  </script>
 
 </body>
 </html>

@@ -37,8 +37,12 @@
       cursor: pointer;
       border-radius: 5px;
     }
-    .country-list {
-      margin-left: 1rem;
+    .continent-content {
+      display: none;
+      margin-top: 10px;
+    }
+    .subregion {
+      margin-top: 1rem;
       background-color: #ffffff;
       padding: 10px;
       border-radius: 5px;
@@ -75,67 +79,120 @@
   </div>
 
   <!-- América -->
-  <h2>América</h2>
-  <div class="country-list">
-    <ul>
-      <li>
-        <img src="https://flagcdn.com/w40/ar.png" alt="Argentina" class="flag"><strong>Argentina</strong>
-        <ul>
-          <li><a href="https://ar.kairosweb.com/" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://ar.kairosweb.com/" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="https://flagcdn.com/w40/br.png" alt="Brasil" class="flag"><strong>Brasil</strong>
-        <ul>
-          <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="https://flagcdn.com/w40/cl.png" alt="Chile" class="flag"><strong>Chile</strong>
-        <ul>
-          <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="https://flagcdn.com/w40/co.png" alt="Colombia" class="flag"><strong>Colombia</strong>
-        <ul>
-          <li><a href="https://www.minsalud.gov.co/salud/MT/Paginas/medicamentos-regulacion-precios.aspx" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://www.minsalud.gov.co/salud/MT/Paginas/medicamentos-regulacion-precios.aspx" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-    </ul>
+  <button class="continent-button" onclick="toggleVisibility('america')">América</button>
+  <div id="america" class="continent-content">
+
+    <div class="subregion">
+      <h3>América del Norte</h3>
+      <ul>
+        <li><img src="https://flagcdn.com/w40/ca.png" class="flag"><strong>Canadá</strong>
+          <ul>
+            <li><a href="[Pegar enlace de base de datos de medicamentos registrados de Canadá aquí]" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="[Pegar enlace de precios de medicamentos de Canadá aquí]" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><img src="https://flagcdn.com/w40/us.png" class="flag"><strong>Estados Unidos</strong>
+          <ul>
+            <li><a href="[Pegar enlace de base de datos de medicamentos registrados de EE.UU. aquí]" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="[Pegar enlace de precios de medicamentos de EE.UU. aquí]" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><img src="https://flagcdn.com/w40/mx.png" class="flag"><strong>México</strong>
+          <ul>
+            <li><a href="[Pegar enlace de base de datos de medicamentos registrados de México aquí]" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="[Pegar enlace de precios de medicamentos de México aquí]" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subregion">
+      <h3>América Central y el Caribe</h3>
+      <ul>
+        <li><strong>Belice</strong> [Espacio para enlaces]</li>
+        <li><strong>Costa Rica</strong> [Espacio para enlaces]</li>
+        <li><strong>El Salvador</strong> [Espacio para enlaces]</li>
+        <li><strong>Guatemala</strong> [Espacio para enlaces]</li>
+        <li><strong>Honduras</strong> [Espacio para enlaces]</li>
+        <li><strong>Nicaragua</strong> [Espacio para enlaces]</li>
+        <li><strong>Panamá</strong> [Espacio para enlaces]</li>
+        <li><strong>Cuba</strong> [Espacio para enlaces]</li>
+        <li><strong>Bahamas</strong> [Espacio para enlaces]</li>
+        <li><strong>República Dominicana</strong> [Espacio para enlaces]</li>
+      </ul>
+    </div>
+
+    <div class="subregion">
+      <h3>América del Sur</h3>
+      <ul>
+        <li><img src="https://flagcdn.com/w40/ar.png" class="flag"><strong>Argentina</strong>
+          <ul>
+            <li><a href="https://ar.kairosweb.com/" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="https://ar.kairosweb.com/" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><strong>Bolivia</strong> [Espacio para enlaces]</li>
+        <li><img src="https://flagcdn.com/w40/br.png" class="flag"><strong>Brasil</strong>
+          <ul>
+            <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/precos" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><img src="https://flagcdn.com/w40/cl.png" class="flag"><strong>Chile</strong>
+          <ul>
+            <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="https://www.cenabast.cl/lista-de-medicamentos-ley-cenabast/" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><img src="https://flagcdn.com/w40/co.png" class="flag"><strong>Colombia</strong>
+          <ul>
+            <li><a href="https://www.minsalud.gov.co/salud/MT/Paginas/medicamentos-regulacion-precios.aspx" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="https://www.minsalud.gov.co/salud/MT/Paginas/medicamentos-regulacion-precios.aspx" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><strong>Ecuador</strong> [Espacio para enlaces]</li>
+        <li><strong>Paraguay</strong> [Espacio para enlaces]</li>
+        <li><strong>Perú</strong> [Espacio para enlaces]</li>
+        <li><strong>Surinam</strong> [Espacio para enlaces]</li>
+        <li><strong>Trinidad y Tobago</strong> [Espacio para enlaces]</li>
+        <li><strong>Uruguay</strong> [Espacio para enlaces]</li>
+        <li><strong>Venezuela</strong> [Espacio para enlaces]</li>
+      </ul>
+    </div>
+
   </div>
 
-  <!-- Europa -->
-  <h2>Europa</h2>
-  <div class="country-list">
-    <ul>
-      <li>
-        <img src="https://flagcdn.com/w40/de.png" alt="Alemania" class="flag"><strong>Alemania</strong>
-        <ul>
-          <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="https://flagcdn.com/w40/es.png" alt="España" class="flag"><strong>España</strong>
-        <ul>
-          <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-      <li>
-        <img src="https://flagcdn.com/w40/fr.png" alt="Francia" class="flag"><strong>Francia</strong>
-        <ul>
-          <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Registro de Medicamentos</a></li>
-          <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Precios de Medicamentos</a></li>
-        </ul>
-      </li>
-    </ul>
+  <!-- Europa (ejemplo reducido) -->
+  <button class="continent-button" onclick="toggleVisibility('europa')">Europa</button>
+  <div id="europa" class="continent-content">
+    <div class="subregion">
+      <ul>
+        <li><img src="https://flagcdn.com/w40/de.png" class="flag"><strong>Alemania</strong> 
+          <ul>
+            <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+        <li><img src="https://flagcdn.com/w40/es.png" class="flag"><strong>España</strong> 
+          <ul>
+            <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Base de datos de medicamentos registrados</a></li>
+            <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Precios de Medicamentos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
+
+  <script>
+    function toggleVisibility(id) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'block') {
+        section.style.display = 'none';
+      } else {
+        section.style.display = 'block';
+      }
+    }
+  </script>
 
 </body>
 </html>

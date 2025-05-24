@@ -78,6 +78,15 @@
     Herramienta de apoyo para realizar consultas de precios referenciales de medicamentos en bases de datos oficiales, conforme a la <strong>Resolución DINAVISA N° 174</strong>.
   </div>
 
+  <!-- Sección de Cotizaciones Cambiarias -->
+  <h2>Cotizaciones Cambiarias</h2>
+  <p>
+    Consulta la cotización oficial de monedas extranjeras a través del sitio del <strong>Banco Central del Paraguay</strong>:
+  </p>
+  <ul>
+    <li><a href="https://www.bcp.gov.py/webapps/web/cotizacion/monedas" target="_blank">Cotización de Monedas – Banco Central del Paraguay</a></li>
+  </ul>
+
   <!-- América -->
   <button class="continent-button" onclick="toggleVisibility('america')">América</button>
   <div id="america" class="continent-content">
@@ -133,42 +142,93 @@
     </div>
 
   </div>
-  <!-- Europa -->
-  <button class="continent-button" onclick="toggleVisibility('europa')">Europa</button>
-  <div id="europa" class="continent-content">
-    <div class="subregion">
-      <ul>
-        <li><img src="https://flagcdn.com/w40/de.png" class="flag"><strong>Alemania</strong>
-          <ul>
-            <li><a href="https://www.bfarm.de/EN/Medicinal-products/_node.html" target="_blank">Base de datos de medicamentos registrados</a></li>
-            <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Precios de Medicamentos</a></li>
-          </ul>
-        </li>
-        <li><img src="https://flagcdn.com/w40/es.png" class="flag"><strong>España</strong>
-          <ul>
-            <li><a href="https://cima.aemps.es/cima/" target="_blank">Base de datos de medicamentos registrados</a></li>
-            <li><a href="https://cima.aemps.es/cima/presentaciones.do" target="_blank">Precios de Medicamentos</a></li>
-          </ul>
-        </li>
-        <li><img src="https://flagcdn.com/w40/fr.png" class="flag"><strong>Francia</strong>
-          <ul>
-            <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Base de datos de medicamentos registrados</a></li>
-            <li><a href="https://www.data.gouv.fr/fr/datasets/base-des-prix-des-produits-de-sante/" target="_blank">Precios de Medicamentos</a></li>
-          </ul>
-        </li>
-        <!-- Puedes continuar agregando otros países europeos aquí -->
-      </ul>
-    </div>
+<!-- Europa -->
+<button class="continent-button" onclick="toggleVisibility('europa')">Europa</button>
+<div id="europa" class="continent-content">
+  <div class="subregion">
+    <ul>
+      <li><img src="https://flagcdn.com/w40/de.png" class="flag"><strong>Alemania</strong>
+        <ul>
+          <li><a href="https://www.bfarm.de/EN/Medicinal-products/_node.html" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.bfarm.de/EN/Medicinal-products/Information-on-medicinal-products/Reference-Pricing/_node.html" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/fr.png" class="flag"><strong>Francia</strong>
+        <ul>
+          <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://base-donnees-publique.medicaments.gouv.fr/" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/pt.png" class="flag"><strong>Portugal</strong>
+        <ul>
+          <li><a href="https://extranet.infarmed.pt/INFOMED-fo/index.xhtml" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://extranet.infarmed.pt/INFOMED-fo/index.xhtml" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/gb.png" class="flag"><strong>Reino Unido</strong>
+        <ul>
+          <li><a href="https://products.mhra.gov.uk/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.nhsbsa.nhs.uk/pharmacies-gp-practices-and-appliance-contractors/drug-tariff" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/es.png" class="flag"><strong>España</strong>
+        <ul>
+          <li><a href="https://cima.aemps.es/cima/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.sanidad.gob.es/areas/farmacia/infoIndustria/SPRAH/preciosMenoresAH/home.htm" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/no.png" class="flag"><strong>Noruega</strong>
+        <ul>
+          <li><a href="https://www.dmp.no/legemiddelverket" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.dmp.no/en/public-funding-and-pricing-of-medicines/pricing-of-medicines/maximum-price" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/it.png" class="flag"><strong>Italia</strong>
+        <ul>
+          <li><a href="https://farmaci.agenziafarmaco.gov.it/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.aifa.gov.it/en/liste-di-trasparenza" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/fi.png" class="flag"><strong>Finlandia</strong>
+        <ul>
+          <li><a href="https://www.fimea.fi/web/en/database-services/medicinal-products-database" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://asiointi.kela.fi/laakekys_app/LaakekysApplication?kieli=en" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/dk.png" class="flag"><strong>Dinamarca</strong>
+        <ul>
+          <li><a href="https://laegemiddelstyrelsen.dk/en/licensing/licensing-of-medicinal-products/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.medicinpriser.dk/default.aspx?lng=2" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/se.png" class="flag"><strong>Suecia</strong>
+        <ul>
+          <li><a href="https://www.lakemedelsverket.se/sv/sok-lakemedelsfakta/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.tlv.se/beslut/sok-i-databasen.html?atcCode=P02CA03&tab=1" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/at.png" class="flag"><strong>Austria</strong>
+        <ul>
+          <li><a href="https://aspregister.basg.gv.at/" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.sozialversicherung.at/oeko/?portal=hvb" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/nl.png" class="flag"><strong>Países Bajos</strong>
+        <ul>
+          <li><a href="https://www.cbg-meb.nl/medicines" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.medicijnkosten.nl/" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+      <li><img src="https://flagcdn.com/w40/ie.png" class="flag"><strong>Irlanda</strong>
+        <ul>
+          <li><a href="https://www.hpra.ie/homepage/medicines" target="_blank">Base de datos de medicamentos registrados</a></li>
+          <li><a href="https://www.sspcrs.ie/druglist/pub" target="_blank">Precios de Medicamentos</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
+</div>
 
-  <!-- Sección de Cotizaciones Cambiarias -->
-  <h2>Cotizaciones Cambiarias</h2>
-  <p>
-    Consulta la cotización oficial de monedas extranjeras a través del sitio del <strong>Banco Central del Paraguay</strong>:
-  </p>
-  <ul>
-    <li><a href="https://www.bcp.gov.py/webapps/web/cotizacion/monedas" target="_blank">Cotización de Monedas – Banco Central del Paraguay</a></li>
-  </ul>
 
   <!-- Función de colapso JS -->
   <script>
